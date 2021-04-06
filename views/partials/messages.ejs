@@ -1,0 +1,59 @@
+<% if(typeof errors != "undefined") { %> <% errors.forEach(function(error) { %>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <%= error.msg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% }); %> <% } %>
+
+<!-- login success message -->
+
+<% if (success_msg !='') { %>
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <%= success_msg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% } %>
+
+<!-- login Error message -->
+<% if (error_msg !='') { %>
+
+<div class="alert alert-sucess alert-dismissible fade show" role="alert">
+  <%= error_msg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% } %>
+
+<!-- Passport error messsage -->
+<% if (error !='') { %>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <%= error %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% } %>
